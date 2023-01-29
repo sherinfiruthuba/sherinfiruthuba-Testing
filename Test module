@@ -1,0 +1,22 @@
+package TestModule; import org.openqa.selenium.
+By; import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class SToRE HooK
+{ public static void main(String[] args) throws
+InterruptedException{
+System.setProperty("Webdriver.chrome.driver","C:\\SeleniumWebDriver\\chromedriver_win32\
+\chromedriver.exe"); s
+WebDriver driver=new ChromeDriver();
+//Launch Amazon browser driver.get("http://localhost/SToRE HooK/");
+String Exception1 = driver.getTitle();
+driver.findElement(By.xpath("/html/body/table/tbody/tr[6]/td[2]/a")).click();
+System.out.println(driver.getTitle());
+//Login to Amazon page driver.findElement(By.className("a6")).click();
+driver.findElement(By.name("username")).sendKeys("Sherin");
+driver.findElement(By.name("password")).sendKeys("sherin@14");
+62
+driver.findElement(By.xpath("//*[@id=\"id01\"]/form/div[2]/button[1]")).
+click(); System.out.println("Successfully Login");
+driver.navigate().to("http://localhost/SToRE HooK/Main.html");
+driver.findElement(By.className("five")).click();
+driver.findElement(By.xpath("//*[@id=\"three\"]/li[6]/a")).click();
